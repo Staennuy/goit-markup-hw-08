@@ -630,7 +630,6 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
-  min-height: 581px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -675,6 +674,9 @@ img {
 .modal-form-field {
   margin-bottom: 10px;
 }
+.modal-form-field-comment {
+  margin-bottom: 20px;
+}
 .modal-form-input-desc {
   display: block;
   font-size: 12px;
@@ -712,6 +714,7 @@ img {
   transition: fill var(--hover-animation);
 }
 .modal-form-comment {
+  display: block;
   width: 100%;
   height: 120px;
   padding: 12px 16px;
@@ -736,7 +739,8 @@ img {
   margin-bottom: 30px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--description-color);
+  justify-content: center;
 }
 .modal-form-check-custom {
   margin-right: 8px;
@@ -752,6 +756,9 @@ img {
 }
 .modal-form-check:focus + .modal-form-check-custom {
   outline: 2px solid var(--hover-color);
+}
+.modal-form-check-desc-link {
+  color: var(--hover-color);
 }
 .modal-form-button {
   width: 200px;
