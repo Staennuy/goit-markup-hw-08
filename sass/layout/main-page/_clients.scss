@@ -1,0 +1,22 @@
+.clients {
+  &__link {
+    @extend %flex-centr;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: #afb1b8;
+    transition: fill var(--hover-animation), border-color var(--hover-animation);
+
+    &:hover,
+    &:focus {
+      border-color: var(--hover-color);
+      fill: var(--hover-color);
+    }
+  }
+
+  &__icon {
+    width: 106px;
+    height: 60px;
+  }
+}

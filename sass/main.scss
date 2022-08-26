@@ -1,0 +1,31 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+@import './utils/mixin';
+
+@import './base/common';
+@import './base/reset';
+@import './base/container';
+@import './base/section';
+
+@import './components/social';
+@import './components/list-cards';
+@import './components/logo';
+@import './components/button';
+@import './components/web-color';
+@import './components/section-title';
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/modal-btn';
+@import './components/modal-form';
+
+@import './layout/main-page/header';
+@import './layout/main-page/hero';
+@import './layout/main-page/benefits';
+@import './layout/main-page/whot-we-do';
+@import './layout/main-page/team';
+@import './layout/main-page/clients';
+@import './layout/main-page/footer';
+
+@import './layout/portfolio/portfolio-button';
+@import './layout/portfolio/portfolio-list';

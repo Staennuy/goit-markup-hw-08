@@ -1,0 +1,23 @@
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-link {
+  @extend %flex-centr;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: fill var(--hover-animation), background-color var(--hover-animation);
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    fill: #ffffff;
+  }
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}

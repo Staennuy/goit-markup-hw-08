@@ -1,0 +1,30 @@
+.benefits-list {
+  &__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+
+  &__wrapper {
+    @extend %flex-centr;
+    width: 100%;
+    height: 120px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+  &__title {
+    @include font(700);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    @include font($lh: 24px);
+    letter-spacing: 0.03em;
+    color: var(--description-color);
+  }
+}

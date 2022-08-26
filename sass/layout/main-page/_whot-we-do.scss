@@ -1,0 +1,22 @@
+.whot-we-do {
+  padding-top: 0;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__overlay {
+    position: absolute;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    @include font(700);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    color: var(--secondary-color);
+  }
+}
