@@ -1,0 +1,45 @@
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color);
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--hover-animation), visibility var(--hover-animation);
+  &__cotainer {
+    position: relative;
+    padding: 48px 40px;
+  }
+
+  &__cloce-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 0;
+    line-height: 0;
+    background-color: transparent;
+    border: none;
+  }
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+
+  &__link {
+    @include font(500, 40px, 47px);
+    color: var(--main-color);
+    letter-spacing: 0.02em;
+  }
+}
