@@ -10,9 +10,13 @@
   visibility: hidden;
   pointer-events: none;
   transition: opacity var(--hover-animation), visibility var(--hover-animation);
+
   &__cotainer {
+    display: flex;
+    flex-direction: column;
     position: relative;
     padding: 48px 40px;
+    height: 100%;
   }
 
   &__cloce-btn {
@@ -35,11 +39,49 @@
     display: flex;
     flex-direction: column;
     row-gap: 32px;
+    margin-bottom: auto;
   }
 
   &__link {
     @include font(500, 40px, 47px);
     color: var(--main-color);
     letter-spacing: 0.02em;
+  }
+  &__akcent {
+    color: var(--hover-color);
+  }
+}
+.mobile-menu-contact {
+  &__list {
+    margin-bottom: 64px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__tel {
+    @include font(500, 34px, 40px);
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+
+  &__mail {
+    @include font(500, 24px, 28px);
+    letter-spacing: 0.02em;
+    color: var(--contact-color);
+  }
+}
+.mobile-menu-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  &__link {
+    @include font(500, 18px, 22px);
+    letter-spacing: 0.02em;
+    color: #2196f3;
   }
 }

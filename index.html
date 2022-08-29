@@ -21,13 +21,13 @@
     <!--HEADER-->
     <header class="header">
       <div class="container header__container">
-        <nav class="nav header__nav">
-          <a class="logo nav__logo link" href="./index.html" lang="en"
-            >Web<span class="logo__studio">Studio</span></a
+        <nav class="header__nav">
+          <a class="logo header__logo link" href="./index.html" lang="en"
+            >Web<span class="header__studio">Studio</span></a
           >
           <ul class="menu list">
             <li class="menu__item">
-              <a class="menu__link menu__link_akcent link" href="./index.html">Студия</a>
+              <a class="menu__link menu__akcent link" href="./index.html">Студия</a>
             </li>
             <li class="menu__item">
               <a class="menu__link link" href="./portfolio.html">Портфолио</a>
@@ -71,7 +71,7 @@
           </button>
           <ul class="mobile-menu__list list">
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link link" href="./index.html">Студия</a>
+              <a class="mobile-menu__link mobile-menu__akcent link" href="./index.html">Студия</a>
             </li>
             <li class="mobile-menu__item">
               <a class="mobile-menu__link link" href="./portfolio.html">Портфолио</a>
@@ -80,21 +80,31 @@
               <a class="mobile-menu__link link" href="">Контакты</a>
             </li>
           </ul>
-          <div mobile->
-            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
-            <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <ul class="list">
-              <li>
-                <a class="link" href="">Instagram</a>
+          <div class="mobile-menu-contact">
+            <ul class="mobile-menu-contact__list list">
+              <li class="mobile-menu-contact__item">
+                <a class="mobile-menu-contact__tel link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
               </li>
-              <li>
-                <a class="link" href="">Twitter</a>
+              <li class="mobile-menu-contact__item">
+                <a class="mobile-menu-contact__mail link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
-              <li>
-                <a class="link" href="">Facebook</a>
+            </ul>
+            <ul class="mobile-menu-social list">
+              <li class="mobile-menu-social__item">
+                <a class="mobile-menu-social__link link" href="">Instagram</a>
               </li>
-              <li>
-                <a class="link" href="">LinkedIn</a>
+              <li class="mobile-menu-social__item">
+                <a class="mobile-menu-social__link link" href="">Twitter</a>
+              </li>
+              <li class="mobile-menu-social__item">
+                <a class="mobile-menu-social__link link" href="">Facebook</a>
+              </li>
+              <li class="mobile-menu-social__item">
+                <a class="mobile-menu-social__link link" href="">LinkedIn</a>
               </li>
             </ul>
           </div>
@@ -102,16 +112,16 @@
       </div>
     </header>
     <!--MAIN-->
-    <!-- <main> -->
-    <!--HERO-->
-    <!-- <section class="hero">
+    <main>
+      <!--HERO-->
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="button" type="button" data-modal-open>Заказать услугу</button>
         </div>
-      </section> -->
-    <!--BENEFITS-->
-    <!-- <section class="section">
+      </section>
+      <!--BENEFITS-->
+      <!-- <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="list-cards benefits-list list">
@@ -162,8 +172,8 @@
           </ul>
         </div>
       </section> -->
-    <!--WHOT-WE-DO-->
-    <!-- <section class="section whot-we-do">
+      <!--WHOT-WE-DO-->
+      <!-- <section class="section whot-we-do">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list-cards list">
@@ -188,8 +198,8 @@
           </ul>
         </div>
       </section> -->
-    <!--TEAM-->
-    <!-- <section class="section team">
+      <!--TEAM-->
+      <!-- <section class="section team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="list-cards list">
@@ -349,8 +359,8 @@
           </ul>
         </div>
       </section> -->
-    <!--CLIENT-->
-    <!-- <section class="section">
+      <!--CLIENT-->
+      <!-- <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="list-cards clients list">
@@ -398,40 +408,45 @@
             </li>
           </ul>
         </div>
-      </section>
-    </main> -->
+      </section> -->
+    </main>
     <!--FOOTER-->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
-        <div class="footer-container-address">
-          <a class="footer-logo link" href="./index.html" lang="en"
-            ><span class="web">Web</span>Studio</a
+        <div class="footer__wrapper">
+          <a class="logo footer__logo link" href="./index.html" lang="en"
+            >Web<span class="footer__logo_white">Studio</span></a
           >
           <address class="address">
-            <ul class="address-list list">
-              <li>
+            <ul class="address__list list">
+              <li class="address__item">
                 <a
-                  class="address-link link"
+                  class="address__link link address__link_white"
                   target="_blank"
                   href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=ru"
                   rel="noreferer noopener"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="mail-team">
-                <a class="mail-link link" href="mailto:info@example.com" lang="en"
+              <li class="address__item">
+                <a
+                  class="address__link address__link_dark link"
+                  href="mailto:info@example.com"
+                  lang="en"
                   >info@example.com</a
                 >
               </li>
-              <li class="tel-team">
-                <a class="tel-link link" href="tel:+380991111111">+38 099 111 11 11</a>
+              <li class="address__item">
+                <a class="address__link address__link_dark link" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
-        </div> -->
-    <!-- JOIN -->
-    <!-- <div class="join">
-          <p class="join__title">присоединяйтесь</p>
+        </div>
+        <!-- JOIN -->
+        <div class="join">
+          <p class="footer__title">присоединяйтесь</p>
           <ul class="social list">
             <li class="join__item">
               <a class="social-link join__social-link" href="">
@@ -462,30 +477,30 @@
               </a>
             </li>
           </ul>
-        </div> -->
-    <!-- FOOTER FORM -->
-    <!-- <div class="footer-form-wrapper">
+        </div>
+        <!-- FOOTER FORM -->
+        <div class="footer-form-wrapper">
           <form class="footer-form">
-            <label class="footer-form-field">
-              <span class="footer-form-input-desc">Подпишитесь на рассылку</span>
+            <label class="footer-form__field">
+              <span class="footer__title">Подпишитесь на рассылку</span>
               <input
-                class="footer-form-input"
+                class="footer-form__input"
                 type="email"
                 name="user-email"
                 placeholder="E-mail"
                 required
               />
             </label>
-            <button class="button footer-form-button" type="submit">
+            <button class="button footer-form__button" type="submit">
               Подпишитесь
-              <svg class="footer-form-button-icon">
+              <svg class="footer-form__icon">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- MODAL -->
     <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">

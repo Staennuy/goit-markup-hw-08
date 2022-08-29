@@ -1,8 +1,13 @@
 .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  display: block;
   font-family: Raleway, sans-serif;
-  color: var(--web-color);
-  @include font(700, 26px, 31px);
+  @include font(700, 24px, 28px);
   letter-spacing: 0.03em;
+  color: var(--hover-color);
+}
+
+@media screen and(min-width: 1200px) {
+  .logo {
+    @include font(700, 26px, 31px);
+  }
 }
