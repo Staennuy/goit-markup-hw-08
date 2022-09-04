@@ -1,11 +1,11 @@
 .portfolio-list {
-  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 .portfolio-item {
   background: #ffffff;
+  flex-basis: calc((100%) / 1);
 }
 .portfolio-link:hover .overlay,
 .portfolio-link:focus .overlay {
@@ -59,4 +59,14 @@
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--description-color);
+}
+@media screen and(min-width: 768px) {
+  .portfolio-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and(min-width: 1200px) {
+  .portfolio-item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }

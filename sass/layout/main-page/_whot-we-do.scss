@@ -1,5 +1,13 @@
+@media screen and(max-width: 1199px) {
+  .whot-we-do {
+    display: none;
+  }
+}
 .whot-we-do {
   padding-top: 0;
+  &__list {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 
   &__wrapper {
     position: relative;

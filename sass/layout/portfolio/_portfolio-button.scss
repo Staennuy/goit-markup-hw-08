@@ -1,9 +1,9 @@
 .portfolio-list-button {
   display: flex;
-  justify-content: center;
-}
-.portfolio-item-button + .portfolio-item-button {
-  margin-left: 8px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 15px;
 }
 .portfolio-button {
   transition: background-color var(--hover-animation), color var(--hover-animation),
@@ -30,4 +30,19 @@
 .akcent-btn {
   background-color: var(--hover-color);
   color: var(--secondary-color);
+}
+@media screen and(min-width: 768px) {
+  .portfolio-list-button {
+    margin-bottom: 30px;
+  }
+}
+@media screen and(min-width: 1200px) {
+  .portfolio-list-button {
+    margin-bottom: 50px;
+  }
+}
+@media screen and(min-width: 768px) {
+  .portfolio-list-button {
+    justify-content: center;
+  }
 }

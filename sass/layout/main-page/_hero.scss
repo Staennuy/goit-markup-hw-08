@@ -25,7 +25,16 @@
   }
 }
 
-@media screen and(max-width: 767px) {
+@media screen and(min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    &__title {
+      @include font(900, 44px, 60px);
+      max-width: 696px;
+    }
+  }
 }
 // .hero {
 //   margin-left: auto;
