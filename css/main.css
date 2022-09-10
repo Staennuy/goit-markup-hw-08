@@ -22,7 +22,7 @@
   clip: rect(0 0 0 0);
 }
 
-.clients__link, .benefits-list__wrapper, .modal-check__desc, .modal-close-btn, .social-link {
+.clients__link, .benefits-list__wrapper, .modal-close-btn, .social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -400,10 +400,10 @@ img {
 }
 
 .modal-check__desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--description-color);
 }
 .modal-check__custom {
   margin-right: 8px;
@@ -414,14 +414,27 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
-.modal-check:checked + .modal-check__custom {
+.modal-check__input:checked + .modal-check__custom {
   background-image: url(../images/check.svg);
 }
-.modal-check:focus + .modal-check__custom {
+.modal-check__input:focus + .modal-check__custom {
   outline: 2px solid var(--hover-color);
 }
 .modal-check__link {
   color: var(--hover-color);
+}
+.modal-check__label {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1666666667;
+}
+@media screen and (min-width: 1200px) {
+  .modal-check__label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .modal-form__button {

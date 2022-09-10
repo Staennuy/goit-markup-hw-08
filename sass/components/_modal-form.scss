@@ -78,11 +78,10 @@
 
 .modal-check {
   &__desc {
-    @extend %flex-centr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--description-color);
   }
   &__custom {
     margin-right: 8px;
@@ -93,14 +92,21 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  &:checked + &__custom {
+  &__input:checked + &__custom {
     background-image: url(../images/check.svg);
   }
-  &:focus + &__custom {
+  &__input:focus + &__custom {
     outline: 2px solid var(--hover-color);
   }
   &__link {
     color: var(--hover-color);
+  }
+  &__label {
+    cursor: pointer;
+    @include font(400, 12px, 14px);
+    @media screen and (min-width: 1200px) {
+      @include font(400, 14px, 24px);
+    }
   }
 }
 
