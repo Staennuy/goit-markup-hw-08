@@ -12,7 +12,9 @@
   transform: translate(0, 0);
 }
 .portfolio-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--hover-animation);
 
   &:hover,
@@ -43,6 +45,7 @@
   transition: transform var(--hover-animation);
 }
 .portdolio-iteam-desc {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }

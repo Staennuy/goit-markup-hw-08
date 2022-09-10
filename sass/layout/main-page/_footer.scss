@@ -21,9 +21,9 @@
 }
 
 .address {
-  &__list {
+  &__item {
     &:not(:last-child) {
-      margin-bottom: 8px;
+      margin-bottom: 9px;
     }
   }
 
@@ -46,7 +46,9 @@
 }
 
 .join {
-  margin-bottom: 60px;
+  @media screen and(max-width:767px) {
+    margin-bottom: 60px;
+  }
 
   &__social-link {
     fill: #ffffff;
